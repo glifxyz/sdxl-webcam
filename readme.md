@@ -40,7 +40,7 @@ Disclaimer: this is only tested on Linux. Prepare to fight some drivers and miss
 sudo modprobe -r v4l2loopback && sudo modprobe v4l2loopback devices=1 video_nr=4 card_label="Virtual" exclusive_caps=1 max_buffers=2
 ```
 
-## Context
+## Demo fridays @ glif
 
 This script was thrown together for our friday demos at [glif.app](https://glif.app/glifs). Give us a follow to see what we're up to: https://twitter.com/heyglif
 
