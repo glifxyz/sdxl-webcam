@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "webcam"
+version = "0.1.0"
+description = ""
+authors = ["rvorias <raphaelvorias@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+opencv-python = "^4.8.1.78"
+pyvirtualcam = "^0.10.2"
+diffusers = "^0.24.0"
+ninja = "^1.11.1.1"
+xformers = "^0.0.23"
+triton = "^2.1.0"
+accelerate = "^0.25.0"
+transformers = "^4.35.2"
+keyboard = "^0.13.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
