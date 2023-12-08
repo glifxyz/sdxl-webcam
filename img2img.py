@@ -39,15 +39,15 @@ from sfast.compilers.stable_diffusion_pipeline_compiler import (
     compile, CompilationConfig
 )
 config = CompilationConfig.Default()
-config.enable_xformers = True
-config.enable_triton = True
+config.enable_cnn_optimization = True
 config.enable_cuda_graph = True
 config.enable_jit = False # You can set this to True, but you'll have to disable generator.manual_seed
 config.enable_jit_freeze = True
-config.trace_scheduler = True
-config.enable_cnn_optimization = True
-config.preserve_parameters = False
+config.enable_triton = True
+config.enable_xformers = True
 config.prefer_lowp_gemm = True
+config.preserve_parameters = False
+config.trace_scheduler = True
 pipeline = compile(pipeline, config)
 
 # # move to gpu
