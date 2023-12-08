@@ -1,7 +1,6 @@
-# SDXL turbo virtual webcam
+# SDXL turbo virtual webcam demo
 
-This script passes your webcam feed into SDXL turbo img2img and streams it to a virtual cam you can use.
-Around 15 fps on a 3080.
+This script passes your webcam feed into SDXL turbo img2img and streams it to a virtual cam you can use in your Zoom calls.
 
 ![Alt text](demo.gif)
 
@@ -40,6 +39,10 @@ Disclaimer: this is only tested on Linux. Prepare to fight some drivers and miss
 ```shell
 sudo modprobe -r v4l2loopback && sudo modprobe v4l2loopback devices=1 video_nr=4 card_label="Virtual" exclusive_caps=1 max_buffers=2
 ```
+
+## Context
+
+This script was thrown together for our friday demos at [glif.app](https://glif.app/glifs). Give us a follow to see what we're up to: https://twitter.com/heyglif
 
 ## Acknowledgements
 
